@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background: url(./bg.jpg);
+    background-size: cover;
+    margin: 175px 20px 0px ;
+    color:aliceblue;
+    position: relative;
+    
+}
+.img{
+    margin: 175px 20px 20px;
+}
+p{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    border:0;
+    padding:10px;
+    font-size: 18px;
+
+}
+input[type="submit"]{
+    color:aliceblue;
+    background-color: steelblue;
+    border-radius: 10px;
+}
+input[type="text"]{
+    color:steelblue;
+    background-color: aliceblue;
+}
+.div1{
+    background: crimson;
+    margin: 10px 430px 400px 400px;    
+    border: 7px solid white;
+    border-radius: 20px;
+
+}

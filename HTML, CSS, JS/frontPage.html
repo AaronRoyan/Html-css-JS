@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasori</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./spotify.js"></script>
+    <link href="frontPageCss.css" rel="stylesheet">
+    <link rel = "icon" href = "./naruto.png" type = "image/x-icon">
+    <link href="./secondHtml.html">
+    <script>
+      function myfunc(){ 
+        var nameRegex = /^[a-zA-Z\-]+$/;
+        var validfirstUsername = document.frm.firstName.value.match(nameRegex);
+        if(validUsername != null){      
+          document.location.href="./secondHtml.html";
+        }
+        else{
+          alert("Enter your details to Play Along");
+          alert("Your first name is not valid. Only characters A-Z, a-z and '-' are  acceptable.");
+          document.frm.firstName.focus();  
+        }
+      }
+    </script>
+    
+  </head>
+  <body>
+    <h1 id="h1">✊ 🤚 🖖</h1>
+    <div class="div1">
+      <img class="icon">
+      <p>Hi!, Let's play a game real quick! </p>
+      <p>Enter your details below to continue </p>
+      <form name="MyForm" method="POST" action="./secondHtml.html">
+        <input type="text" name="Uname" class="inputext" placeholder="*Name">
+        <br><br>
+        <input type="email" name="pass" class="inputext" placeholder="*E-mail">
+        <br><br>
+        <a href="./secondHtml.html"><input type="submit" onclick="myClick()"></a>
+        <script>
+          function myClick(){
+            document.location.href="./secondHtml.html";
+          }
+        </script> 
+      </form>
+    
+    </div>
+  </body>
+</html>
+Contact:+1 5682203
